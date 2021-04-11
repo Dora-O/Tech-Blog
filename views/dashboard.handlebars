@@ -1,0 +1,11 @@
+<div class="newPost">
+    <a href="/addnewBlog"><button class="button"> + New Post</button></a>
+</div>
+
+{{#if blogs.length}}
+<div class="container-dashboard">
+     {{#each blogs as |blog|}}
+        {{> bloginfo_LoggedUser blog}}
+    {{/each}}
+</div>
+{{/if}}

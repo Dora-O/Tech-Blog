@@ -44,6 +44,10 @@ router.get('/login', (req, res) => {
 
 //renders signup page
 router.get('/signup', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
     res.render('signup');
 });
 

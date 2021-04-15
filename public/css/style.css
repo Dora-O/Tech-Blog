@@ -125,3 +125,7 @@ input[type="password"] {
   float: right;
   color: darkgreen;
 }
+
+.dual-nav {
+  z-index: 100 
+}

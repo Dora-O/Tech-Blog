@@ -20,18 +20,18 @@
           <li class="nav-item">
             <a class="nav-link pl-0" href="/" class="linkbtn">Home</a>
           </li>
-          {{#if loggedIn}}
+          {{#if logged_in}}
+          <li class="nav-item">
+            <a class="nav-link" id="logout" class="linkbtn">Logout</a>
+          </li>
+          {{/if}}
           <li class="nav-item">
             <a class="nav-link" href="/dashboard" class="linkbtn">Dashboard</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/login" class="linkbtn">Login</a>
           </li>
-          {{else}}
-          <li class="nav-item">
-            <a class="nav-link" id="logout" class="linkbtn">Logout</a>
-          </li>
-          {{/if}}
+
         </ul>
       </div>
       <header>
@@ -45,7 +45,7 @@
   </main>
 </body>
 
-{{#if loggedIn}}
+{{#if logged_in}}
 <script src="/js/logout.js"></script>
 {{/if}}
 
